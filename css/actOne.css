@@ -1,0 +1,68 @@
+#title{
+    width: 100%;
+    text-align: center;
+}
+#containerTop{
+    margin: 0 auto;
+    width: 90%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#containerTop a{
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
+}
+#subtitle{
+    height: 100%;
+    width: 30%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/acto1.png');
+}
+#imgContainer{
+    margin: 0 auto;
+    height: 52%;
+    width: 70%;
+    background-color: #242424;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+#imgSlider{
+    height: 100%;
+    width: 25%;
+    background-color: gray;
+}
+
+#imgExpo{
+    width: 65%;
+    height: 80%;
+    margin-right: 4%;
+    font-size: 1.5vw;
+    line-height: 1.9vw;   
+}
+.sliderItem{
+    height: 33.33%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sliderItem:first-child{
+    background-image: url('../img/img1.jpg');
+}
+.sliderItem:nth-child(2){
+    background-image: url('../img/img2.jpg');
+    background-position-y: -5px;
+}
+.sliderItem:nth-child(3){
+    background-image: url('../img/img3.jpg');
+    background-position-y: -5px;
+}
+
