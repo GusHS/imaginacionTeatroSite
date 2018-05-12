@@ -1,52 +1,96 @@
-#mainContainer{
-    height: 100%;
-    width: 100%;
-}
-#optionContainer{
-    width: 100%;
-    height: 20%;
+#containerTop{
+    margin: 0 auto;
+    width: 90%;
+    height: 15%;
     display: flex;
     flex-direction: row;
+    align-items: center;
     justify-content: space-between;
 }
-#op1{
-    background-image: url('../img/acto1.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+#containerTop a{
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
 }
-#op2{
-    background-image: url('../img/acto2.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-#op3{
-    background-image: url('../img/acto3.png');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-.option{
-    width: 30%;
+#subtitle{
     height: 100%;
+    width: 30%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('../img/acto3.png');
+}
+#title{
+    width: 100%;
+    height: 15%;
+    text-align: center;
+    background-image: url('../img/intermedio.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#content{
+    margin: 0 auto;
+    width: 100%;
+    height: 40%;
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.contentItem{
+    width: 30%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;;
+}
+
+#donation{
+    background-image: url('../img/company.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.itemText{
+    width: 80%;
+    font-size: 1vw;
+}
+
+#payment{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-#gallery{
-    margin-top: 3px;
-    width: 100%;
-    height: 30%;
-    display: flex;
-    flex-direction: row;
-    background-color: orange;
-    justify-content: space-between;
+#externalPayment{
+    margin-top: 2%;
 }
-.galleryItem{
-    width: 20%;
-    height: 100%;
-    background-color: red;
+table{
+    height: 30%;
+    width: 100%;
+
+}
+td{
+    padding-top: 0.5em;
+    width: 100%;
+    font-size: 1vw;
+}
+td,input{
+    border-radius: 10px;
+}
+
+#submitInput{
+    background-color: #FFC300;
+    border: none;
+    border-radius: 5px;
+    height: 1.5vw;
+    width: 3vw;
+    float: right;
+    font-size: 1vw;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 #footer{
     width: 100%;
@@ -67,6 +111,10 @@
     width: 20%;
     margin-left: 5%;
     font-size: 1.4vw;
+}
+#footerText a{
+    text-decoration: none;
+    color: black;
 }
 #footerContact{
     margin-right: 3%;

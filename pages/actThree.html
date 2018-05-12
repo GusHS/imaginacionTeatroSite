@@ -9,28 +9,62 @@
 <body>
     <div id="mainContainer">
         <div id="topbarLogos">
-            <div class="logoTop"></div>
-            <div class="logoTop">COMPAÑ&Iacute;A</div>
+            <a href="../index.html" class="logoTop"></a>
+            <div class="logoTop">COMPA&Ntilde;&Iacute;A</div>
         </div>
         <div id="title"><h1>Acto 3</h1></div>
         <div id="containerTop">
-            <a href="actOne.html" class="controller"><h1><</h1></a>
+            <a href="actTwo.html" class="controller"><h1><</h1></a>
             <div id="subtitle"></div>
             <a  class="controller" style="color:black"><h1>></h1></a>
         </div>
         <div id="content">
-            <div id="donation">
+            <div id="donation" class="contentItem">
                 <h1>Donaciones</h1>
-                <p>
-                    En Imakinaci&oacute;n nos dedicamos a crear sueños.
-                    Tu apoyo inspira y construye entretenimiento cultural
-                    de calidad para el p&uacute;blico.
-                </p>
-                <a href="" id="paypalButton"></a>
-                
+                <div class="itemText">
+                    <p>
+                        En Imakinaci&oacute;n nos dedicamos a crear sueños.<br>
+                        Tu apoyo inspira y construye entretenimiento cultural
+                        de calidad para el p&uacute;blico.
+                    </p>
+                </div>
+                <div id="payment">
+                    <a href="" id="paypalButton">
+                        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal" />
+                    </a>
+                    <a href="" id="externalPayment">
+                        <img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/cc-badges-ppmcvdam.png" alt="Buy now with PayPal" />
+                    </a>    
+                </div>
             </div>
-            <div id="contract">
+            <div id="contract" class="contentItem">
+                <h1>Contrataciones</h1>
+               <div class="itemText">
+                    <p>
+                        Dale un toque original a tu evento al presentar
+                        alguna de nuestras puestas en escena.<br>
+                        Nos adaptamos a cualquier espacio.
+                    </p>
+                </div>
+                <div id="contractForm">
+                    <form enctype="text/plain" method="GET" action="">
+                        <table>
+                            <tr>
+                                <td>Nombre: </td><td><input type="text" name="contractName"></td>
+                            </tr>
+                            <tr>
+                                <td>Correo: </td><td><input type="text" name="contractEmail"></td>
+                            </tr>
+                            <tr>
+                                <td>Mensaje: </td><td><input type="text" name="contractMessage" id="messageInput"></td>
+                            </tr>
+                            <tr>
+                                <td></td> <td><input type="submit" value="Enviar" id="submitInput"></td> 
+                            </tr>
+                        </table>
+                    </form>
 
+                </div>
             </div>
         </div>
     </div>

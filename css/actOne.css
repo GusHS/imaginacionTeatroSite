@@ -14,7 +14,7 @@
 #containerTop a{
     color: white;
     text-decoration: none;
-    font-size: 3vw;
+    font-size: 6vw;
 }
 #subtitle{
     height: 100%;
@@ -32,12 +32,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 #imgSlider{
     height: 100%;
     width: 25%;
-    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content:center; 
 }
 
 #imgExpo{
@@ -47,22 +49,90 @@
     font-size: 1.5vw;
     line-height: 1.9vw;   
 }
-.sliderItem{
-    height: 33.33%;
-    width: 100%;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.sliderItem:first-child{
-    background-image: url('../img/img1.jpg');
-}
-.sliderItem:nth-child(2){
-    background-image: url('../img/img2.jpg');
-    background-position-y: -5px;
-}
-.sliderItem:nth-child(3){
-    background-image: url('../img/img3.jpg');
-    background-position-y: -5px;
-}
 
+
+.carousel-inner.vertical {
+    height: 100%; /*Note: set specific height here if not, there will be some issues with IE browser*/
+  }
+  .carousel-inner.vertical > .item {
+    -webkit-transition: .3s ease-in-out top;
+    -o-transition: .3s ease-in-out top;
+    transition: .3s ease-in-out top;
+  }
+  
+  @media all and (transform-3d),
+  (-webkit-transform-3d) {
+    .carousel-inner.vertical > .item {
+      -webkit-transition: -webkit-transform .3s ease-in-out;
+      -o-transition: -o-transform .3s ease-in-out;
+      transition: transform .3s ease-in-out;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-perspective: 1000;
+      perspective: 1000;
+    }
+    .carousel-inner.vertical > .item.next,
+    .carousel-inner.vertical > .item.active.right {
+      -webkit-transform: translate3d(0, 33.33%, 0);
+      transform: translate3d(0, 33.33%, 0);
+      top: 0;
+    }
+    .carousel-inner.vertical > .item.prev,
+    .carousel-inner.vertical > .item.active.left {
+      -webkit-transform: translate3d(0, -33.33%, 0);
+      transform: translate3d(0, -33.33%, 0);
+      top: 0;
+    }
+    .carousel-inner.vertical > .item.next.left,
+    .carousel-inner.vertical > .item.prev.right,
+    .carousel-inner.vertical > .item.active {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      top: 0;
+    }
+  }
+  
+  .carousel-inner.vertical > .active {
+    top: 0;
+  }
+  .carousel-inner.vertical > .next,
+  .carousel-inner.vertical > .prev {
+    top: 0;
+    height: 100%;
+    width: auto;
+  }
+  .carousel-inner.vertical > .next {
+    left: 0;
+    top: 33.33%;
+    right:0;
+  }
+  .carousel-inner.vertical > .prev {
+    left: 0;
+    top: -33.33%;
+    right:0;
+  }
+  .carousel-inner.vertical > .next.left,
+  .carousel-inner.vertical > .prev.right {
+    top: 0;
+  }
+  .carousel-inner.vertical > .active.left {
+    left: 0;
+    top: -33.33%;
+    right:0;
+  }
+  .carousel-inner.vertical > .active.right {
+    left: 0;
+    top: 33.33%;
+    right:0;
+  }
+  #carouselpager{
+      height: 100%;
+  }
+  #carousel-pager .carousel-control.left {
+      bottom: initial;
+      width: 100%;
+  }
+  #carousel-pager .carousel-control.right {
+      top: initial;
+      width: 100%;
+  }

@@ -28,4 +28,54 @@
     margin: 0 auto;
     width: 90%;
     height: 53%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.contentItem{
+    width: 20%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.itemText{
+    width: 80%;
+    font-size: 1vw;
+}
+
+#payment{
+    margin-top: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#externalPayment{
+    margin-top: 2%;
+}
+table{
+    height: 40%;
+    width: 100%;
+
+}
+td{
+    padding-top: 0.5em;
+    width: 100%;
+    font-size: 1vw;
+}
+td,input{
+    border-radius: 10px;
+}
+
+#submitInput{
+    background-color: #FFC300;
+    border: none;
+    border-radius: 5px;
+    height: 1.5vw;
+    width: 3vw;
+    float: right;
+    font-size: 1vw;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
